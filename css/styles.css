@@ -1,0 +1,64 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-align: right;
+    background-color: #E9FBFF;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/* troquei a cor da logo para preto */
+#direitos-humanos {
+    width: 65px;
+    height: 65px;
+    filter: brightness(0) invert(0);
+}
+
+/* estilos da navbar */
+.navbar {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.botao {
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 0;
+    width: 104px;
+    height: 39px;
+    border-radius: 20px;
+    position: relative; 
+}
+
+
