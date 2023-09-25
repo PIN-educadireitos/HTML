@@ -12,10 +12,10 @@ body {
     letter-spacing: 0.15em;
     text-align: right;
     background-color: #E9FBFF;
+    max-width: 100%
 }
 
 .container {
-    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     display: flex; 
@@ -61,4 +61,37 @@ header {
     position: relative; 
 }
 
+footer {
+    width: 100%;
+    background-color: #C6C6C6;
+    bottom: 0px;
+    position: absolute;
+    margin: 0px auto;
+    padding: 20px;
+    display: flex;
+}
 
+#footer-logo{
+    width: 65px;
+    height: 65px;
+    margin-left: 15px;
+}
+
+#footer-text2 {
+    border: 2px solid red;
+    font-size: 8px;
+    position: relative;
+    text-align: justify;
+    width: 300px;
+    height: 50px;
+    letter-spacing: 2px;
+    width: auto;
+}
+
+.footer-text{
+    border: 2px solid blue;
+    font-size: 14px;
+    text-align: justify;
+    margin: 0px 70px;
+    width: 500px;
+}
