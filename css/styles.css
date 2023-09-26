@@ -102,7 +102,7 @@ footer {
     float: right;
     width: 350px;
     height: auto;
-    right: 200px;
+    margin-left: 800px;
 }
 
 #footer-div{
