@@ -78,9 +78,8 @@ footer {
     margin-right: 49px; 
 }
 
-figcaption h5 {
-    color: black;
-    margin: 0;
+#footer-figure {
+    margin-left: 200px;
     
 }
 .footer-text {
@@ -88,10 +87,30 @@ figcaption h5 {
     text-align: justify;
     margin: 0px 3px;
     width: 500px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: -200px;
 }
 
 #footer-text2 {
     font-size: 12px;
     text-align: justify;
     color: black;
+    display: flex;
+    position: absolute;
+    float: right;
+    width: 350px;
+    height: auto;
+    right: 200px;
 }
+
+#footer-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -200px;
+}
+
+
