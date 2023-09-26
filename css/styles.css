@@ -68,14 +68,14 @@ footer {
     margin: 0px auto;
     padding: 20px;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: space-between; /* Add space between the logo and text */
+    align-items: center; 
+    justify-content: space-between;
 }
 
 #footer-logo {
     width: 65px;
     height: auto;
-    margin-right: 49px; /* Adjust the margin to move the logo to the left */
+    margin-right: 49px; 
 }
 
 figcaption h5 {
