@@ -75,7 +75,7 @@ footer {
 #footer-logo {
     width: 65px;
     height: auto;
-    margin-right: 49px; 
+    margin-right: 2.64em; 
 }
 
 #footer-figure {
@@ -90,7 +90,7 @@ footer {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-left: -200px;
+    margin-left: -310px;
 }
 
 #footer-text2 {
