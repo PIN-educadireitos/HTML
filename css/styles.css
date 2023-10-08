@@ -93,18 +93,6 @@ footer {
     margin-left: -200px;
 }
 
-#footer-text2 {
-    font-size: 12px;
-    text-align: justify;
-    color: black;
-    display: flex;
-    position: absolute;
-    float: right;
-    width: 350px;
-    height: auto;
-    margin-left: 800px;
-}
-
 #footer-div{
     width: 100%;
     display: flex;
@@ -112,5 +100,22 @@ footer {
     align-items: center;
     margin-left: -200px;
 }
+
+/* Estilos da lista no footer */
+.footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 35rem; 
+}
+
+.footer-list li {
+    font-size: 12px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 5px;
+}
+
+
 
 
