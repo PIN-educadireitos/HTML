@@ -70,6 +70,7 @@ footer {
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 #footer-logo {
@@ -124,4 +125,8 @@ footer {
 
 .footer-list a:hover {
     text-decoration-line: underline;
+}
+
+noticias-temas {
+    width: 100px;
 }
