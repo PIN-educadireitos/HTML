@@ -64,12 +64,12 @@ footer {
     width: 100%;
     background-color: #C6C6C6;
     bottom: 0px;
-    /* position: absolute; */
+    /* position: absolute; */ /* retirei essa função pois o rodapé não estava no final da pagina então ja arrumei - Yan */
     margin: 0px auto;
     padding: 20px;
     display: flex;
     align-items: center; 
-    /* justify-content: space-between; */
+    /* justify-content: space-between; */ /* retirei essa função pois o rodapé não estava no final da pagina então ja arrumei - Yan */
     flex-shrink: 0;
 }
 
