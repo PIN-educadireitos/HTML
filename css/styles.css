@@ -128,5 +128,7 @@ footer {
 }
 
 noticias-temas {
-    width: 100px;
+    height: 180px;
+    width: 375px;
+    object-fit: cover;
 }
