@@ -127,8 +127,20 @@ footer {
     text-decoration-line: underline;
 }
 
-noticias-temas {
-    height: 180px;
-    width: 375px;
+.kids1 {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kids2 {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kids3 {
+    width: 300px;
+    height: 200px;
     object-fit: cover;
 }
