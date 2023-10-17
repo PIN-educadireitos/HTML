@@ -12,7 +12,40 @@ body {
 header {
     margin: 1.5rem 4%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Aplique flex no footer para alinhar o conteúdo no centro vertical */
+footer {
+    width: 100%;
+    background-color: #C6C6C6;
+    padding: 20px;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Alinha todo o conteúdo verticalmente */
+}
+
+.container-2 {
+    /* Defina a largura para centralizar horizontalmente */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
+#direitos-humanos {
+    width: 65px;
+    height: 65px;
+    filter: brightness(0) invert(0);
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.hdr-item {
+    margin-right: 20px;
+    height: 69px;
+    display: flex;
     align-items: center;
 }
 
