@@ -19,22 +19,22 @@ body {
     justify-content: flex-end;
 }
 
-/* Aplique flex no footer para alinhar o conteúdo no centro vertical */
+
 footer {
     width: 100%;
     background-color: #C6C6C6;
     padding: 20px;
     bottom: 0;
     display: flex;
-    align-items: center; /* Alinha todo o conteúdo verticalmente */
+    align-items: center; 
 }
 
 .container-2 {
-    /* Defina a largura para centralizar horizontalmente */
+
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; /* Alinha o conteúdo verticalmente */
+    align-items: center; 
 }
 
 #direitos-humanos {
