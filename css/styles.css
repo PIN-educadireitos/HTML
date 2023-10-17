@@ -6,49 +6,13 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     background-color: #E9FBFF;
 }
 
-.container {
-    margin: 1.5rem 4rem;
+header {
+    margin: 1.5rem 4%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-/* Aplique flex no footer para alinhar o conteúdo no centro vertical */
-footer {
-    width: 100%;
-    background-color: #C6C6C6;
-    padding: 20px;
-    bottom: 0;
-    display: flex;
-    align-items: center; /* Alinha todo o conteúdo verticalmente */
-}
-
-.container-2 {
-    /* Defina a largura para centralizar horizontalmente */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Alinha o conteúdo verticalmente */
-}
-
-#direitos-humanos {
-    width: 65px;
-    height: 65px;
-    filter: brightness(0) invert(0);
-    justify-content: flex-start;
-    margin-right: auto;
-}
-
-.hdr-item {
-    margin-right: 20px;
-    height: 69px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -62,7 +26,7 @@ footer {
     width: 104px;
     height: 39px;
     border-radius: 20px;
-    position: relative;
+    margin-left: 52rem;
 }
 
 #search {
@@ -72,7 +36,6 @@ footer {
     width: 250px;
     height: 39px;
     border-radius: 20px;
-    position: relative;
     text-align: left;
 }
 
@@ -83,8 +46,9 @@ footer {
 }
 
 .intro {
-    border: 2px solid blue;
     text-align: center;
+    margin: 0 7rem 10px 3rem;
+    border: 2px solid blue;
 }
 
 .intro h1 {
@@ -92,18 +56,15 @@ footer {
 }
 
 .intro p {
-    margin: 0 7rem 10px 3rem;
     text-align: justify;
     color: #4f4f4f;
 }
 
 .noticias {
-    height: 1000px;
-    width: 100%;
-    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: 2px solid red;
 }
 
 .noticias-item {
@@ -118,38 +79,47 @@ footer {
     object-fit: cover;
 }
 
+footer {
+    background-color: #C6C6C6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 #footer-figure {
-    width: 120px;
-    margin-left: 8rem;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    
 }
 
 #footer-logo {
     width: auto;
     height: auto;
+    margin: auto;
 
 }
 
-#footer-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#footer-figure h5 {
+    margin: 0;
+    font-size: 15px;
 }
 
 .footer-text {
     font-size: 13px;
     text-align: justify;
     width: 500px;
-    margin-left: -6rem;
+    margin-left: 14rem;
 }
 
 .footer-list {
     list-style-type: none;
-    position: absolute;
-    right: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-list li {
