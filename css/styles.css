@@ -16,16 +16,19 @@ header {
     justify-content: flex-end;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 footer {
     width: 100%;
     background-color: #C6C6C6;
     padding: 20px;
-    bottom: 0;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
-
 
 #direitos-humanos {
     width: 65px;
