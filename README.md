@@ -17,3 +17,5 @@ Arrumei o tamanho das fontes do header e do text de introd.
 ** Navbar atrasado, mas criei a section.
 !! Quando for trabalhar com a grade de noticias, toma cuidado eu defini um tamanho de 1000 px, tenta encaixar nesse espaço e dps nois vê, se precisar comenta outras coisas COM CUIDADO para n errar e bugar. 
 Lipe
+
+16/10 - arrumei toda a cagada que fizeram(nao sei quem fez mas vou caçar até a morte), enfim refiz o container do footer pq tinha 3 CONTAINERS com o mesmo nome, cuidado com esses detalhes pfv, alinhei as "noticias", reformulei nosso codigo inteiro praticamente e coloquei a logo oficial do educadireito | Uriel 

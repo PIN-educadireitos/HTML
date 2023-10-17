@@ -2,44 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    /* letter-spacing: 0.15em; ACHEI O SITE ESTRANHO ASSIM || LIPE */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #E9FBFF;
-    max-width: 100%;
-    
 }
 
 .container {
-    margin: 1.5rem 4rem 0rem 4rem; 
+    margin: 1.5rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-/* header {
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 10px;
-} TIREI PQ N PRECISA || LIPE*/
+/* Aplique flex no footer para alinhar o conteúdo no centro vertical */
+footer {
+    width: 100%;
+    background-color: #C6C6C6;
+    padding: 20px;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Alinha todo o conteúdo verticalmente */
+}
 
-/* troquei a cor da logo para preto */
+.container-2 {
+    /* Defina a largura para centralizar horizontalmente */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
 #direitos-humanos {
     width: 65px;
     height: 65px;
     filter: brightness(0) invert(0);
+    justify-content: flex-start;
+    margin-right: auto;
 }
-
-/* estilos da navbar */
- /* .header {
-    display: flex;
-    align-items: center; 
- } TIREI PQ N PRECISA || LIPE */
 
 .hdr-item {
     margin-right: 20px;
-    position: relative;
-    float: right;
     height: 69px;
     display: flex;
     align-items: center;
@@ -55,7 +62,7 @@ body {
     width: 104px;
     height: 39px;
     border-radius: 20px;
-    position: relative; 
+    position: relative;
 }
 
 #search {
@@ -65,62 +72,50 @@ body {
     width: 250px;
     height: 39px;
     border-radius: 20px;
-    position: relative; 
+    position: relative;
     text-align: left;
 }
 
-#lupa-icon{
+#lupa-icon {
     width: 48px;
     height: auto;
     margin-top: -7.7px;
 }
 
-nav p {
-    border: 2px solid green;
-    width: 100%;
-    height: 40px;
-    padding: 20px;
-    margin: 10px 0px;
-}
-
 .intro {
     border: 2px solid blue;
+    text-align: center;
 }
 
-    .intro h1 {
-    text-align: center; 
+.intro h1 {
     font-size: 45px;
-    }
+}
 
-    .intro h4{
-    margin: 20px 0px; 
-    font-size: 20px;
-    }
-
-    .intro p{
-    margin: -10px 7rem 10px 3rem;
+.intro p {
+    margin: 0 7rem 10px 3rem;
     text-align: justify;
     color: #4f4f4f;
-    }
+}
 
 .noticias {
     height: 1000px;
     width: 100%;
     border: 2px solid red;
-}
-
-.noticias-item{
-    display: inline;
-}
-
-footer {
-    width: 100%;
-    background-color: #C6C6C6;
-    bottom: 0px;
-    position: absolute;
-    margin: 0px;
-    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noticias-item {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.kids {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #footer-figure {
@@ -132,12 +127,12 @@ footer {
 }
 
 #footer-logo {
-    width: 65px;
-    height: auto; 
+    width: auto;
+    height: auto;
+
 }
 
-
-#footer-div{
+#footer-div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -151,7 +146,6 @@ footer {
     margin-left: -6rem;
 }
 
-/* Estilos da lista no footer */
 .footer-list {
     list-style-type: none;
     position: absolute;
@@ -160,20 +154,13 @@ footer {
 
 .footer-list li {
     font-size: 12px;
-    color: black;
-    text-align: right;
 }
+
 .footer-list a {
-    text-decoration-line: none;
+    text-decoration: none;
     color: black;
 }
 
 .footer-list a:hover {
-    text-decoration-line: underline;
-}
-
-.kids {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+    text-decoration: underline;
 }
