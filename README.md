@@ -16,10 +16,17 @@ Arrumei o tamanho das fontes do header e do text de introd.
 ** Precisa escolher qual vai ser a fonte, eu gosto dela redondinha igual a do Figma.
 ** Navbar atrasado, mas criei a section.
 !! Quando for trabalhar com a grade de noticias, toma cuidado eu defini um tamanho de 1000 px, tenta encaixar nesse espaço e dps nois vê, se precisar comenta outras coisas COM CUIDADO para n errar e bugar. 
-Lipe
+Godoy
 
 16/10 - arrumei toda a cagada que fizeram(nao sei quem fez mas vou caçar até a morte), enfim refiz o container do footer pq tinha 3 CONTAINERS com o mesmo nome, cuidado com esses detalhes pfv, alinhei as "noticias", reformulei nosso codigo inteiro praticamente e coloquei a logo oficial do educadireito | Uriel 
 
 17/10 - reformulei mais uma vez nosso codigo, esta sem divs desnecessarias e sem bugs acho eu, muedei a logo e agora estamos mais perto da nossa primeira versão do site, caso a alterações de vocês estarem erradas no seu pc, nao upem ele arruma primeiro pra depois upar ele no github | Uriel
 
 17/10 - adicionei o container no codigo | Uriel
+
+24/10 - Reorganização da main, inicio dos cards, organização do css e do HTML
+** Precisa upar o header
+** Concertar a responsividade do footer
+** Iniciar noticias
+** Iniciar doações
+| Godoy
