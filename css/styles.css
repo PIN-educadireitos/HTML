@@ -7,66 +7,49 @@
 
 body {
     background-color: #E9FBFF;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-a {
-    font-style: normal;
-    list-style-type: none;
-    text-decoration: none;
-    color: #090c1e;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 header {
-    margin: 1.5rem 4%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-#direitos-humanos {
-    width: 65px;
-    height: 65px;
-    justify-content: flex-start;
-    margin-right: auto;
+.logo {
+    font-size: 2em;
+    pointer-events: none;
+    margin-right: 17em;
 }
 
-.header-botao {
-    font-size: 12px;
-    font-weight: 700;
-    color: #090c1e;
-    background-color: transparent;
-    border: 2px solid #090c1e;
-    cursor: pointer;
-    width: 104px;
-    height: 39px;
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
     border-radius: 20px;
-    margin-right: 10px;
+    margin: 0 10px;
+    font-weight: 600;
 }
 
-#search {
-    background-color: transparent;
-    border: 2px solid #090c1e;
-    cursor: pointer;
-    width: 250px;
-    height: 39px;
-    border-radius: 20px;
-    text-align: left;
-}
+.navigation a:hover, 
+.navigation a.active {
+    background: #3eb7fb;
+    color: black;
 
-#lupa-icon {
-    width: 48px;
-    height: auto;
-    margin-top: -7.7px;
 }
 
 .intro {
     text-align: center;
     margin: 0 7rem 10px 3rem;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .intro h1 {
@@ -156,8 +139,9 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    margin-top: 50px;
+    margin-top: 20rem;
     width: 100%;
+    bottom: 0%;
 }
 
 #footer-figure {
@@ -195,4 +179,9 @@ footer {
 
 .footer-list li {
     font-size: 12px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
