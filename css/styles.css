@@ -6,71 +6,121 @@
 }
 
 body {
-    background-color: #E9FBFF;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #262a2e;
 }
 
 
 header {
     position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
+    left: 10rem;
+    width: 1200px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: #161819;
+    border-radius: 20px;
+     margin: 0 auto; 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    /* margin-bottom: 40px;
+     */
+    
 }
+
+.header-hide {
+    transition: top 400ms ease-in-out;
+    transform-origin: top;
+}
+
 
 .logo {
-    font-size: 2em;
-    pointer-events: none;
-    margin-right: 17em;
+    position: relative;
+    margin-left: 20px;
 }
 
-.navigation a {
+
+.navigation a{
     text-decoration: none;
-    color: black;
-    padding: 6px 15px;
+    color: white;
     border-radius: 20px;
-    margin: 0 10px;
+    margin: 0 auto;
     font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.navigation a:hover, 
-.navigation a.active {
-    background: #3eb7fb;
-    color: black;
+header ul {
+    display: flex;
+    margin-right: 20px;
+}
 
+header li {
+    margin: 0 15px;
+}
+
+.ul-underline-effect {
+    display: flex;
+    position: relative;
+}
+
+.ul-underline-effect::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    background-color: aqua;
+    /* background-image: linear-gradient(to right, cor 1, cor 2, cor 3....); */
+    transform-origin: bottom center ;
+    transition: transform 0.2s ease;
+}
+
+.ul-underline-effect:hover::before {
+    transform: scale(1);
+    transform-origin: bottom center;
+}
+
+
+
+.navigation a:hover {
+    color: white;
+    animation: circ;
+    
 }
 
 .intro {
-    text-align: center;
-    margin: 0 7rem 10px 3rem;
-    /* border: 2px solid blue; */
+    text-align: left;
+    margin: 20px auto;
+    width: 50%;
 }
 
 .intro h1 {
     font-size: 45px;
-    color: #232453;
+    color: white;
 }
 
 .intro p {
     text-align: justify;
-    color: #4f4f4f;
+    color: white;
 }
 
 .container {
     display: flex;
-    width: 60%;
-    margin: 0 4%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 40px;
 }
 
 main {
-    width: 100%;
-    padding: 0 0;
+    width: 60%
 }
 
 .direitos-item {
