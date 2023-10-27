@@ -30,3 +30,11 @@ Godoy
 ** Iniciar noticias
 ** Iniciar doações
 | Godoy
+
+
+26/10 - Footer continuado, animação do header completa (ou quase), noticias iniciada.
+** Precisa pegar notícias
+** Precisa continuar o footer
+** Precisa Continuar o header
+** Precisa iniciar doações
+| Godoy, Uriel e Luiz
