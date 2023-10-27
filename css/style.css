@@ -93,7 +93,7 @@ header li {
 
 .intro {
     text-align: left;
-    margin: auto;
+    margin: 0 auto;
     width: 50%;
 }
 
@@ -242,9 +242,4 @@ footer {
 
 .footer-list li {
     font-size: 12px;
-}
-
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
