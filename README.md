@@ -33,8 +33,9 @@ Godoy
 
 
 26/10 - Footer continuado, animação do header completa (ou quase), noticias iniciada.
-** Precisa pegar notícias
-** Precisa continuar o footer
-** Precisa Continuar o header
-** Precisa iniciar doações
+!! Finalizar o header
+!! Finalizar o footer
+** Finalizar o main
+** Continuar notícias
+** Iniciar doações
 | Godoy, Uriel e Luiz
