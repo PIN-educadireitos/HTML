@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 header {
     position: sticky;
     left: 10rem;
-    width: 1200px;
+    width: 1280px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -37,16 +38,11 @@ header {
 }
 
 
-.logo {
-    position: relative;
-    margin-left: 20px;
-}
 
 
 .navigation a{
     text-decoration: none;
     color: white;
-    border-radius: 20px;
     margin: 0 auto;
     font-weight: 600;
     position: relative;
@@ -183,55 +179,159 @@ aside {
     object-fit: cover;
 }
 
-footer {
-    background-color: #C6C6C6;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 20rem;
-    width: 100%;
-    bottom: 0%;
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
 }
 
-#footer-figure {
-    margin-left: 60px;
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contatos  {
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
 
-#footer-logo {
-    width: auto;
+#footer_contatos img {
+    width: 65px;
     height: auto;
-    margin: auto;
-
 }
 
-#footer-figure h5 {
-    margin: 0;
-    font-size: 15px;
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
 }
 
-.footer-text {
-    font-size: 13px;
-    text-align: justify;
-    width: 500px;
-    margin-left: 14rem;
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+    margin-right: 2px;
 }
 
-.footer-list {
-    margin-left: auto;
-    margin-right: auto;
-    list-style-type: none;
+#footer_social_media .footer-link:hover {
+    opacity: 0.5;
+    /* zoom: 1.05; */
 }
 
-.footer-list li {
-    font-size: 12px;
+#instagram {
+    background: #353535;
 }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+#github {
+    background: #353535;
 }
+
+#linkedin {
+    background: #353535;
+}
+
+.footerlist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    margin-left: 5rem;
+}
+
+.footerlist .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footerlist .footer-link:hover {
+    color:  #3cb6fc;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* margin-right: 10rem; */
+    margin-left: -5rem;
+    margin-right: 5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: 4px;
+    border-radius: 4rem;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+    background-color: var(--color-neutral-0);
+    border-radius: 5px;
+}
+
+#input_group button {
+    background-color: #3cb6fc;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+#ifsp{
+    height: 200px;
+    width: auto;
+}
+
+figure {
+    margin-top: -15px;
+    /* margin-left: 10rem; */
+}
+
+.educa {
+    width: 200px;
+    height: auto;
+}
+
