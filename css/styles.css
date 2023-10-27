@@ -14,7 +14,6 @@ body {
 
 header {
     position: sticky;
-    left: 10rem;
     width: 1200px;
     padding: 10px 20px;
     display: flex;
@@ -25,17 +24,15 @@ header {
     border-radius: 20px;
      margin: 0 auto; 
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 40px;
-    /* margin-bottom: 40px; */
-    
+    top: 40px;
+    margin-bottom: 100px;
     
 }
 
 .header-hide {
-    transition: top 400ms ease-in-out;
+    transition: top 300ms ease-in-out;
     transform-origin: top;
 }
-
 
 .logo {
     position: relative;
@@ -96,7 +93,7 @@ header li {
 
 .intro {
     text-align: left;
-    margin: 20px auto;
+    margin: auto;
     width: 50%;
 }
 
