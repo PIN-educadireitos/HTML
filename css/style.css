@@ -27,7 +27,7 @@ header {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     top: 40px;
     margin-bottom: 100px;
-    
+    margin-top: 40px;
 }
 
 .header-hide {
@@ -209,7 +209,7 @@ footer {
 #footer_content {
     background-color: var(--color-neutral-10);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
@@ -222,10 +222,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-#footer_contatos img {
-    width: 65px;
-    height: auto;
-}
+
 
 #footer_social_media {
     display: flex;
@@ -267,6 +264,7 @@ footer {
     gap: 0.75rem;
     list-style: none;
     margin-left: 5rem;
+    margin-top: 30px;
 }
 
 .footerlist .footer-link {
@@ -282,9 +280,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    /* margin-right: 10rem; */
     margin-left: -5rem;
     margin-right: 5rem;
+    margin-top: -5px;
 }
 
 #footer_subscribe p {
@@ -303,7 +301,7 @@ footer {
     padding: 0.75rem;
     width: 100%;
     background-color: var(--color-neutral-0);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #input_group button {
@@ -332,17 +330,42 @@ footer {
 }
 
 #ifsp{
-    height: 200px;
+    height: 180px;
     width: auto;
 }
 
-figure {
+.educa {
     margin-top: -15px;
     /* margin-left: 10rem; */
+    
+}
+#footer_contatos .educa {
+    width: 10 /* Aumente ou diminua conforme necessário */
 }
 
-.educa {
-    width: 200px;
+#cvv {
+    width: 40px;
     height: auto;
 }
 
+#onu {
+    width: 40px;
+    height: auto;
+    margin: 15px 0;
+}
+
+#unicef {
+    width: 40px;
+    height: auto;
+}
+
+.patrao {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+#footer_content figure{
+    display: flex;
+    margin-right: 10rem;
+}
