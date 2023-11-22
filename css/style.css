@@ -32,12 +32,12 @@ ul {
     --txt-main: #d3d3d3;
 }
 
-.ul-underline-effect {
+.underline-efx {
     display: flex;
     position: relative;
 }
 
-.ul-underline-effect::before {
+.underline-efx::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -51,9 +51,19 @@ ul {
     transition: transform 0.2s ease;
 }
 
-.ul-underline-effect:hover::before {
+.underline-efx:hover::before {
     transform: scale(1);
     transform-origin: bottom center;
+}
+
+.multiline-efx {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 350ms;
+}
+  
+.multline-efx:hover {
+    color: #f1f1f1;
+    text-decoration-color: rgba(1, 255, 255, 1);
 }
 
 header {
