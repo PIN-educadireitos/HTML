@@ -180,15 +180,13 @@ main {
 
 
 .caixa-artigo {
-    border-left: 5px solid aqua;
-    border-right: 5px solid aqua;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 50px 0 50px;
+    border-left: 5px solid rgb(60, 182, 252);
+    border-right: 5px solid rgb(60, 182, 252);
+    border-radius: 50px;
+    margin: 0px 7rem;
     height: 143px;
     position: relative;
-    width: 350px;
+    width: 500px;
 }
 
 .caixa-txt {
@@ -291,20 +289,17 @@ aside h3 {
     font-size: .875rem;
     line-height: 1.5;
     margin: 10px 15px 10px 15px;
-    /* background-color: var(--gray-1); */
     display: flex;
     align-items: center;
     width: 90px;
     height: 32px;
     line-height: 32px;
     padding: 5px 8px;
-    /* border-radius: var(--radius-20); */
     position: relative;
     border: transparent solid 1px;
     border-radius: 55px;
     background-color: #353535;
-
-
+    text-decoration: none;
 }
 
 .tag-list a .tag-accent {
