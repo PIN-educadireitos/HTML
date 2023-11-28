@@ -12,6 +12,10 @@ body {
     background-color: #262a2e;
 }
 
+a {
+    text-decoration: none;
+}
+
 h3 {
     font-weight: 800;
 }
@@ -189,7 +193,7 @@ main {
     background-color: var(--bg-card);
     box-shadow: var(--shadow);
 }
-
+ 
 .direitos-item a figure {
     width: 200px;
     height: auto;

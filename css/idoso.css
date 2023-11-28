@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px;
+    font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -60,10 +61,10 @@ ul {
 }
 
 .multiline-efx {
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 350ms;
+    text-decoration: underline 0.15em rgba(1, 255, 255, 0);
+    transition: text-decoration-color 350ms ease-in-out;
 }
-  
+
 .multiline-efx:hover {
     color: #f1f1f1;
     text-decoration-color: rgba(1, 255, 255, 1);
@@ -102,6 +103,8 @@ header {
 header ul {
     display: flex;
     margin-right: 20px;
+    height: 63px;
+    align-items: center;
 }
 
 header li {
@@ -111,6 +114,20 @@ header li {
 .navigation a:hover {
     color: white;
     animation: circ;
+}
+
+.nav-sub {
+    background-color: #23aaf2;
+    border-radius: 999px;
+    padding: 13px;
+}
+
+.nav-sub:hover {
+    background-color: #23aaf2e3;
+}
+
+.nav-sub .underline-efx::before {
+    background-color: #eee;
 }
 
 .container {
@@ -130,14 +147,34 @@ main {
     flex-direction: column;
     border-radius: 15px;
     margin: 10px 0px 25px 0px;
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 40px 40px 40px 40px;
     background-color: var(--bg-card);
     box-shadow: var(--shadow);
     gap: 40px;
 }
 
+.hero figcaption {
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+    font-size: 10px;
+    text-decoration: none;
+    
+}
+
+.hero figcaption a {
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.hero figcaption a:hover {
+    text-decoration: underline;
+    color: #3cb6fc;
+}
+
 #banner figure {
-    width: 97%;
+    width: 100%;
     height: 400px;
     align-self: center;
 }
@@ -149,16 +186,17 @@ main {
 .hero figure img {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
 }
 
 .hero h1 {
     color: #f1f1f1;
     line-height: 2rem;
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
     font-size: 2rem;
+    border-left: 3px solid #3cb6fc;
+    padding-left: 30px;
 }
 
 .hero-txt {
@@ -166,8 +204,8 @@ main {
 }
 
 .hero-txt p {
-    color: #d3d3d3;
-    text-align: left;
+    color: #eee;
+    text-align: justify;
     margin-top: 2rem;
     line-height: 1.5;
 }
@@ -178,15 +216,24 @@ main {
     font-weight: 600;
 }
 
+.hero-txt figure{
+    margin-bottom: 40px;
+}
+
+.hero-txt figure img{
+    border-radius: 15px;
+}
 
 .caixa-artigo {
-    border-left: 5px solid rgb(60, 182, 252);
-    border-right: 5px solid rgb(60, 182, 252);
-    border-radius: 50px;
-    margin: 0px 7rem;
+    border-left: 5px solid aqua;
+    border-right: 5px solid aqua;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
     height: 143px;
     position: relative;
-    width: 500px;
+    width: 350px;
 }
 
 .caixa-txt {
@@ -198,16 +245,17 @@ main {
     justify-content: center;
 }
 
-.caixa-txt-title{
+.caixa-txt-title {
     color: #f1f1f1;
-    text-align: center; 
+    text-align: center;
     text-align: left;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
-.caixa-txt-p{
+.caixa-txt-p {
     display: flex;
     width: 60px;
     height: 70px;
@@ -216,19 +264,20 @@ main {
     gap: 40px;
 }
 
-.caixa-txt-p figure img{
+.caixa-txt-p figure img {
     width: 60px;
     height: auto;
 }
 
-.txt p{
+.txt p {
     color: #d3d3d3;
     margin: 40px 0 32px;
     text-align: justify;
     line-height: 1.2;
     letter-spacing: 2px;
 }
-.card-txt-2{
+
+.card-txt-2 {
     display: flex;
     border-radius: 15px;
     margin: 10px 0px 25px 0px;
@@ -237,6 +286,13 @@ main {
     box-shadow: var(--shadow);
 }
 
+.leia-mais {
+    text-decoration: none;
+    color: #23aaf2;
+    font-style: italic;
+}
+
+/* começo aside */
 aside {
     width: 30%;
     height: 100%;
@@ -248,33 +304,48 @@ aside {
     box-shadow: var(--shadow);
     color: white;
     margin-top: 9.5px;
-    padding: 20px;
-    gap: 15px;
+    padding: 40px 20px;
+    gap: 40px;
     font-family: 'Poppins';
 }
 
 aside h3 {
-    margin-left: 13px;
-    text-align: left;
-    font-size: 1.25rem;
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+/* começo posters/ultimas noticias */
+.notice {
     display: flex;
-    width: 100%;
+    gap: 25px;
+    flex-direction: column;
 }
 
 .aside-item {
     width: 100%;
-    /* padding: 10px; */
     text-align: center;
     display: flex;
     align-items: flex-start;
-    /* Adicione esta linha */
+}
+
+.aside-item a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
 }
 
 .aside-img {
     width: 80px;
-    height: auto;
+    height: 50px;
     object-fit: cover;
     border-radius: 8px;
+    line-height: 16px;
+    transition: all 0.3s;
+}
+
+.aside-img:hover {
+    transform: scale(1.1);
+    border: 0.5px solid #3cb6fc;
 }
 
 .aside-item figcaption {
@@ -284,34 +355,198 @@ aside h3 {
     margin: 0px 16px 0px 13px;
 }
 
+
+.aside-item h4 {
+    text-align: left;
+    font-size: 14px;
+}
+
+
+/* fim posters/ultimas noticias */
+
+
+
+/* inicio das tags */
+
+.widget h3 {
+    margin-bottom: 20px;
+}
+
 .tag-list a {
     color: #d3d3d3;
-    font-size: .875rem;
-    line-height: 1.5;
-    margin: 10px 15px 10px 15px;
     display: flex;
     align-items: center;
-    width: 90px;
     height: 32px;
     line-height: 32px;
     padding: 5px 8px;
-    position: relative;
-    border: transparent solid 1px;
     border-radius: 55px;
-    background-color: #353535;
+    transition: all 0.4s;
     text-decoration: none;
+    background-color: #353535;
+    width: min-content;
 }
 
-.tag-list a .tag-accent {
+.tag-list a p {
+    margin-top: 0;
+}
+
+.hero-txt .tag-list{
+    margin-top: 32px;
+}
+
+.tag-accent-idoso {
     width: 8px;
     height: 8px;
     margin-right: 6px;
     border-radius: 15px;
-    background-color: #161819;
+    background-color: #ffffff;
+}
+
+.tag-accent-eca{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 15px;
+    background-color: #ff00ea;
+}
+
+.tag-accent-clt{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 15px;
+    background-color: #3ceffc;
+}
+
+.tag-accent-deficiente{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 15px;
+    background-color: #f9fc3c;
+}
+
+.tag-accent-preso{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 15px;
+    background-color: #e5541d;
+}
+
+.aside-tag-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.tag-list li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-list a:hover {
+    background-color: #262a2e;
+    border: 1px solid #3cb6fc;
+}
+
+/* fim das tags */
+
+
+/* começo do formulário */
+.form{
+    background-color: #23aaf2;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.txt-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.txt-input h4{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.txt-input p {
+    color: #eee;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.input input{
+    width: 275px;
+    height: 48px;
+    border-radius: 999px;
+    border: none;
+    background-color: #f1f1f1;   
+}
+
+#nome{
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+#nome::placeholder{
+    font-weight: 600;
+    color: #a8a29e;
+}
+
+#email{
+    text-align: left;
+    padding-left: 20px;
+}
+
+#email::placeholder{
+    font-weight: 600;
+    color: #a8a29e;
+}
+
+#enviar{
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: all 0.3s;
+    font-weight: 600;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: all 350ms;
+}
+
+#enviar:hover{
+    text-decoration-color: #23aaf2;
+    background-color: #f1f1f1d2;
 }
 
 
+/* fim do formulário */
 
+.other{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.other #footer_social_media {
+    gap: 1rem;
+
+}
+
+/* fim aside */
+
+
+/* começo footer */
 footer {
     margin-top: 40px;
     width: 100%;
@@ -476,3 +711,6 @@ footer {
     padding: 1.5rem;
     font-weight: 100;
 }
+
+
+/* fim do footer */
