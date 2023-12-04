@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,7 @@ h3 {
 
 h4 {
     font-weight: 600;
-    color: var(--txt-ftr);
+    color: #f3f3f3;
 }
 
 ul {
@@ -62,13 +63,15 @@ ul {
 }
 
 .multiline-efx {
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    
+    text-decoration: underline 0.15em #3cb6fc00;
     transition: text-decoration-color 350ms;
 }
   
-.multline-efx:hover {
+.multiline-efx:hover {
+    text-underline-offset: 3px;
     color: #f1f1f1;
-    text-decoration-color: rgba(1, 255, 255, 1);
+    text-decoration-color: #3cb6fc;
 }
 
 header {
@@ -102,7 +105,6 @@ header {
 
 header ul {
     display: flex;
-    margin-right: 20px;
 }
 
 header li {
@@ -128,7 +130,6 @@ header li {
 .intro-2 {
     text-align: left;
     margin: 0 auto;
-    width: 1200px;
     height: 400px;
     background-image: url(../img/noracism.jpg);
     background-repeat: no-repeat;
@@ -140,12 +141,12 @@ header li {
 .intro .gradient-box {
     border-radius: 15px;
     height: 400px;
-    background: linear-gradient(90deg, rgba(0, 25, 36, 0.486) 0%, rgba(189,189,189,0.11808473389355745) 100%);
+    background: linear-gradient(90deg, rgb(0, 25, 36) 0%, rgba(189,189,189,0.11808473389355745) 100%);
 }    
 .intro-2 .gradient-box {
     border-radius: 15px;
     height: 400px;
-    background: linear-gradient(180deg, rgba(0, 25, 36, 0.486) 10%, rgba(189,189,189,0.11808473389355745) 100%);
+    background: rgb(0 25 36 / 58%)
 }    
 
 
@@ -165,13 +166,12 @@ header li {
 }
 .intro-2 p {
     margin: 0px auto;
-    width: 70%;
+    width: 57%;
     text-align: justify;
     color: white;
     font-weight: 400;
-    text-align: center;
-    padding: 80px 0px;
-    font-size: 20px;
+    padding: 52px 0px;
+    font-size: 18px;
 }
 
 .container {
@@ -189,19 +189,24 @@ main {
 .direitos-item {
     display: flex;
     border-radius: 15px;
-    margin: 10px 0px 25px 0px;
-    padding: 20px;
+    margin: 0px 0px 36px 0px;
+    padding: 35px 20px;
     background-color: var(--bg-card);
     box-shadow: var(--shadow);
+    transition: border 0.4s ease-in;   
+}
+
+.direitos-item:hover{
+    border: 0.3px solid #3cb6fc;
 }
  
-.direitos-item a figure {
+.direitos-item figure {
     width: 200px;
     height: auto;
     padding: 5px;
 }
 
-.direitos-item a figure img {
+.direitos-item figure img {
     width: 150px;
     height: auto;
     border-radius: 5px;
@@ -235,41 +240,250 @@ aside {
     border-radius: 15px;
     box-shadow: var(--shadow);
     color: white;
-    margin-top: 9.5px;
-    padding: 20px;
-    gap: 15px;
+    padding: 40px 20px;
+    gap: 40px;
+    font-family: 'Poppins';
 }
 
 aside h3 {
-    margin-left: 13px;
-    text-align: left;
-    font-size: 1.25rem;
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+/* começo posters/ultimas noticias */
+.notice {
     display: flex;
-    width: 100%;
+    gap: 25px;
+    flex-direction: column;
 }
 
 .aside-item {
     width: 100%;
-    /* padding: 10px; */
     text-align: center;
     display: flex;
-    align-items: flex-start; /* Adicione esta linha */
+    align-items: flex-start;
+    padding: 5px;
+    border-radius: 15px;
+    transition: all 0.4s ease-in;
+}
+
+.aside-item:hover {
+    border: 0.3px solid #3cb6fc;
+}
+
+.aside-item a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
 }
 
 .aside-img {
     width: 80px;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    
+    line-height: 16px;
+    transition: all 0.3s;
 }
+
+
 
 .aside-item figcaption {
     margin-left: 6px;
     font-size: 15px;
     text-align: left;
-   margin: 0px 16px 0px 13px;
+    margin: 0px 16px 0px 13px;
 }
+
+
+.aside-item h4 {
+    text-align: left;
+    font-size: 14px;
+}
+
+
+/* fim posters/ultimas noticias */
+
+
+
+/* inicio das tags */
+
+.widget h3 {
+    margin-bottom: 20px;
+}
+
+.tag-list a {
+    color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    text-decoration: none;
+    background-color: #353535;
+    width: min-content;
+}
+
+.tag-list a p {
+    margin-top: 0;
+}
+
+.hero-txt .tag-list{
+    margin-top: 32px;
+}
+
+.tag-accent-idoso {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.tag-accent-eca{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #ff00ea;
+}
+
+.tag-accent-clt{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #3ceffc;
+}
+
+.tag-accent-deficiente{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #f9fc3c;
+}
+
+.tag-accent-preso{
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #e5541d;
+}
+
+.aside-tag-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.tag-list li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-list a:hover {
+    background-color: #262a2e;
+    border: 1px solid #3cb6fc;
+}
+
+/* fim das tags */
+
+
+/* começo do formulário */
+.form{
+    background-color: #23aaf2;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.txt-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.txt-input h4{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.txt-input p {
+    color: #eee;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.input input{
+    width: 275px;
+    height: 48px;
+    border-radius: 15px;
+    border: none;
+    background-color: #f1f1f1;   
+}
+
+#nome{
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+#nome::placeholder{
+    font-weight: 600;
+    color: #a8a29e;
+}
+
+#email{
+    text-align: left;
+    padding-left: 20px;
+}
+
+#email::placeholder{
+    font-weight: 600;
+    color: #a8a29e;
+}
+
+#enviar{
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: all 0.3s;
+    font-weight: 600;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: all 350ms;
+}
+
+#enviar:hover{
+    text-decoration-color: #23aaf2;
+    background-color: #f1f1f1d2;
+}
+
+
+/* fim do formulário */
+
+.other{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.other #footer_social_media {
+    gap: 1rem;
+
+}
+
+/* fim aside */
 
 
 

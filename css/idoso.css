@@ -61,13 +61,14 @@ ul {
 }
 
 .multiline-efx {
-    text-decoration: underline 0.15em rgba(1, 255, 255, 0);
-    transition: text-decoration-color 350ms ease-in-out;
+    text-decoration: underline 0.15em #3cb6fc00;
+    transition: text-decoration-color 350ms;
 }
 
 .multiline-efx:hover {
+    text-underline-offset: 3px;
     color: #f1f1f1;
-    text-decoration-color: rgba(1, 255, 255, 1);
+    text-decoration-color: #3cb6fc;
 }
 
 header {
