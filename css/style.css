@@ -18,11 +18,11 @@ a {
 
 h3 {
     font-weight: 800;
-    color: #3cb6fc;
 }
 
 h4 {
     font-weight: 600;
+    color: var(--txt-ftr);
 }
 
 ul {
@@ -261,6 +261,7 @@ aside h3 {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    
 }
 
 .aside-item figcaption {
