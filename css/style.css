@@ -53,7 +53,7 @@ ul {
     transform: scale(0);
     background-color: aqua;
     /* background-image: linear-gradient(to right, cor 1, cor 2, cor 3....); */
-    transform-origin: bottom center ;
+    transform-origin: bottom center;
     transition: transform 0.2s ease;
 }
 
@@ -63,11 +63,11 @@ ul {
 }
 
 .multiline-efx {
-    
+
     text-decoration: underline 0.15em #3cb6fc00;
     transition: text-decoration-color 350ms;
 }
-  
+
 .multiline-efx:hover {
     text-underline-offset: 3px;
     color: #f1f1f1;
@@ -77,14 +77,14 @@ ul {
 header {
     position: sticky;
     width: 1200px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     background: #161819;
     border-radius: 20px;
-     margin: 40px auto; 
+    margin: 40px auto;
     box-shadow: var(--shadow);
     top: 40px;
 }
@@ -93,7 +93,8 @@ header {
     transition: top 300ms ease-in-out;
     transform-origin: top;
 }
-.navigation a{
+
+.navigation a {
     text-decoration: none;
     color: white;
     margin: 0 auto;
@@ -105,10 +106,7 @@ header {
 
 header ul {
     display: flex;
-}
-
-header li {
-    margin: 0 15px;
+    gap: 15px;
 }
 
 .navigation a:hover {
@@ -121,7 +119,7 @@ header li {
     margin: 0 auto;
     width: 1200px;
     height: 400px;
-    background-image: url(../img/welcome.jpg);
+    background-image: url(../img/home/welcome.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
@@ -129,9 +127,9 @@ header li {
 
 .intro-2 {
     text-align: left;
-    margin: 0 auto;
+    margin-bottom: 36px;
     height: 400px;
-    background-image: url(../img/noracism.jpg);
+    background-image: url(../img/home/noracism.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     border-radius: 15px;
@@ -141,13 +139,14 @@ header li {
 .intro .gradient-box {
     border-radius: 15px;
     height: 400px;
-    background: linear-gradient(90deg, rgb(0, 25, 36) 0%, rgba(189,189,189,0.11808473389355745) 100%);
-}    
+    background: linear-gradient(90deg, rgb(0, 25, 36) 0%, rgba(189, 189, 189, 0.11808473389355745) 100%);
+}
+
 .intro-2 .gradient-box {
     border-radius: 15px;
     height: 400px;
     background: rgb(0 25 36 / 58%)
-}    
+}
 
 
 .intro h3 {
@@ -160,14 +159,13 @@ header li {
 .intro p {
     margin: 1rem 0 0 2rem;
     width: 40%;
-    text-align: justify;
     color: white;
     font-weight: 400;
 }
+
 .intro-2 p {
     margin: 0px auto;
     width: 57%;
-    text-align: justify;
     color: white;
     font-weight: 400;
     padding: 52px 0px;
@@ -178,32 +176,38 @@ header li {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 36px;
 }
 
 main {
     width: 67%;
-    margin-right: 3%;
+    margin-right: 36px;
 }
 
 .direitos-item {
+    height: 200px;
     display: flex;
     border-radius: 15px;
-    margin: 0px 0px 36px 0px;
+    margin-bottom: 36px;
     padding: 35px 20px;
     background-color: var(--bg-card);
     box-shadow: var(--shadow);
-    transition: border 0.4s ease-in;   
+    transition: border 0.4s ease-in;
+    align-items: center;
 }
 
-.direitos-item:hover{
+.direitos-item:hover {
     border: 0.3px solid #3cb6fc;
 }
- 
+
 .direitos-item figure {
     width: 200px;
     height: auto;
     padding: 5px;
+}
+
+#logo-card {
+    margin-right: 50px;
 }
 
 .direitos-item figure img {
@@ -212,19 +216,16 @@ main {
     border-radius: 5px;
 }
 
-.direitos-item-txt h3{
+.direitos-item-txt h3 {
     line-height: 30px;
     font-size: 2rem;
     color: var(--title-ftr);
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    letter-spacing: -1px;
 }
 
-.direitos-item-txt p{
-    margin-top: 10px;
+.direitos-item-txt p {
+    margin-top: 15px;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     word-spacing: -1px;
     color: var(--txt-ftr);
@@ -271,7 +272,7 @@ aside h3 {
     border: 0.3px solid #3cb6fc;
 }
 
-.aside-item a{
+.aside-item a {
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -330,7 +331,7 @@ aside h3 {
     margin-top: 0;
 }
 
-.hero-txt .tag-list{
+.hero-txt .tag-list {
     margin-top: 32px;
 }
 
@@ -342,7 +343,7 @@ aside h3 {
     background-color: #ffffff;
 }
 
-.tag-accent-eca{
+.tag-accent-eca {
     width: 8px;
     height: 8px;
     margin-right: 6px;
@@ -350,7 +351,7 @@ aside h3 {
     background-color: #ff00ea;
 }
 
-.tag-accent-clt{
+.tag-accent-clt {
     width: 8px;
     height: 8px;
     margin-right: 6px;
@@ -358,7 +359,7 @@ aside h3 {
     background-color: #3ceffc;
 }
 
-.tag-accent-deficiente{
+.tag-accent-deficiente {
     width: 8px;
     height: 8px;
     margin-right: 6px;
@@ -366,7 +367,7 @@ aside h3 {
     background-color: #f9fc3c;
 }
 
-.tag-accent-preso{
+.tag-accent-preso {
     width: 8px;
     height: 8px;
     margin-right: 6px;
@@ -394,17 +395,17 @@ aside h3 {
 
 
 /* começo do formulário */
-.form{
+.form {
     background-color: #23aaf2;
     border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding: 2rem;
     gap: 30px;
 }
 
-.txt-input{
+.txt-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,7 +413,7 @@ aside h3 {
     text-align: center;
 }
 
-.txt-input h4{
+.txt-input h4 {
     font-weight: 800;
     font-size: 2rem;
 }
@@ -423,36 +424,39 @@ aside h3 {
     font-size: 1.05rem;
 }
 
-.input input{
+.input input {
     width: 275px;
     height: 48px;
     border-radius: 15px;
     border: none;
-    background-color: #f1f1f1;   
+    background-color: #f1f1f1;
 }
 
-#nome{
+#nome {
+    width: 100%;
     text-align: left;
     padding-left: 20px;
     margin-bottom: 8px;
 }
 
-#nome::placeholder{
+#nome::placeholder {
     font-weight: 600;
     color: #a8a29e;
 }
 
-#email{
+#email {
+    width: 100%;
     text-align: left;
     padding-left: 20px;
 }
 
-#email::placeholder{
+#email::placeholder {
     font-weight: 600;
     color: #a8a29e;
 }
 
-#enviar{
+#enviar {
+    width: 100%;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s;
@@ -464,7 +468,7 @@ aside h3 {
     transition: all 350ms;
 }
 
-#enviar:hover{
+#enviar:hover {
     text-decoration-color: #23aaf2;
     background-color: #f1f1f1d2;
 }
@@ -472,7 +476,7 @@ aside h3 {
 
 /* fim do formulário */
 
-.other{
+.other {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -492,7 +496,7 @@ footer {
     width: 100%;
     color: var(--title-ftr);
     background-color: #171717;
-    
+
 }
 
 .footer-link {
@@ -508,12 +512,12 @@ footer {
     justify-items: center;
 }
 
-#footer_content figure{
+#footer_content figure {
     display: flex;
     margin-top: -10px;
 }
 
-#footer_contatos  {
+#footer_contatos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -526,7 +530,7 @@ footer {
     gap: 2rem;
 }
 
-#footer_social_media .footer-link{
+#footer_social_media .footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -594,7 +598,7 @@ footer {
 }
 
 .footerlist .footer-link:hover {
-    color:  #3cb6fc;
+    color: #3cb6fc;
 }
 
 #footer_subscribe {
@@ -646,9 +650,66 @@ footer {
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+    color: white;
 }
 
-Title {
-    text-align: left;
+@media(max-width:1024px) {
 
+    header {
+        width: calc(100% - 35px);
+    }
+
+    #intro {
+        width: calc(100% - 35px);
+    }
+
+    main {
+        margin-right: 25px;
+    }
+
+    .container {
+        width: calc(100% - 35px);
+    }
+
+    .direitos-item {
+        height: 300px;
+    }
+
+    .intro-2 {
+        height: 500px;
+    }
+
+    .intro-2 .gradient-box{
+        height: 500px;
+    }
+
+    .intro-2 p {
+        width: 80%;
+    }
+
+    .aside-tag-list ul {
+        gap: 20px 20px;
+    }
+
+    footer {
+        padding: 0 30px 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    p {
+        font-size: 7px;
+    }
+
+    .intro p {
+        font-size: 9px;
+    }
 }
